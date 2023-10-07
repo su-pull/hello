@@ -1,0 +1,59 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: rgb(226 232 240);
+    --color-background: #111a21;
+    --color-a-hover: rgb(19 78 74);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-text: rgb(55 65 81);
+    --color-background: #fff3d4;
+    --color-a-hover: #a9d6b5;
+  }
+}
+
+body {
+  padding: 16px;
+  font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: var(--color-text);
+  text-align: center;
+  background: var(--color-background);
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+dl {
+  text-align: left;
+}
+
+dd {
+  padding: 8px;
+}
+
+a {
+  padding: 3px 8px;
+  color: var(--color-text);
+  border-radius: 14px;
+}
+
+a:hover {
+  background: var(--color-a-hover);
+}
+
+img {
+  filter: blur(10px);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 1.2s ease-in-out;
+  transform: scale(1.5);
+}
+
+.loaded {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1);
+}

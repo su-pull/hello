@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "license",
+      "package.json",
+      "pnpm-lock.yaml",
+      "readme.md",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
